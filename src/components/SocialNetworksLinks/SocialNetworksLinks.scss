@@ -1,0 +1,13 @@
+.contactsIcon{
+  display: flex;
+  gap: 15px;
+
+  img{
+    height: 22px;
+    width: auto;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

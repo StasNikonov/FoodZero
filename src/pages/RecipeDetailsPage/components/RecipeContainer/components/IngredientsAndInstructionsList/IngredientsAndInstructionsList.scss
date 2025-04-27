@@ -1,0 +1,23 @@
+@media(max-width: 1024px) {
+  .listElement{
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 768px) {
+  .listElement{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 576px) {
+  .listElement{
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 480px) {
+  .listElement{
+    font-size: 8px;
+  }
+}

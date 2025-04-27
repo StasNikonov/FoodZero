@@ -1,0 +1,216 @@
+.processSection{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .rosemaryImg{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .rosemaryBottom{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+
+  .processSectionContainer{
+    padding-top: 150px;
+    padding-bottom: 250px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+
+    .processDetails{
+      margin-right: 30px;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+
+      &.centered{
+        justify-content: center;
+        width: 30%;
+      }
+
+      .processTitle{
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      .processDescription{
+        color: #4D4D4D;
+      }
+    }
+
+    .processTitle{
+      font-size: 88px;
+    }
+
+    .sliceProcess{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .sliceProcessImg{
+        width: 600px;
+        height: auto;
+      }
+    }
+
+    .pickledProcess{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      gap: 50px;
+
+      .pickledProcessImg{
+        width: 500px;
+        height: auto;
+      }
+    }
+
+    .bakeProcess{
+      margin-top: -450px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 50px;
+
+      .bakeProcessImg{
+        width: 500px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .processSection{
+    .processSectionContainer {
+      .sliceProcess {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+
+        .sliceProcessImg{
+          width: 50%;
+        }
+      }
+
+      .pickledProcess {
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+
+        .pickledProcessImg{
+          width: 50%;
+        }
+      }
+
+      .bakeProcess {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+        margin-top: 0;
+
+        .bakeProcessImg{
+          width: 50%;
+        }
+      }
+
+      .processDetails {
+        width: 50%;
+        text-align: left;
+        align-items: flex-start;
+      }
+
+      .processDetails.centered {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+
+    .rosemaryImg,
+    .rosemaryBottom {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .processSection{
+    .processSectionContainer{
+      padding-top: 0;
+      padding-bottom: 100px;
+      .processTitle{
+        font-size: 48px;
+      }
+      .processDetails{
+        .processTitle{
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .processSection{
+    .processSectionContainer{
+      padding-top: 0;
+      padding-bottom: 100px;
+      .processTitle{
+        font-size: 38px;
+      }
+      .processDetails{
+        .processTitle{
+          font-size: 38px;
+        }
+        .processDescription{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .processSection{
+    .processSectionContainer{
+      padding-top: 0;
+      padding-bottom: 100px;
+      .processTitle{
+        font-size: 26px;
+      }
+      .processDetails{
+        .processTitle{
+          font-size: 26px;
+        }
+        .processDescription{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,71 @@
+.ourStorySection {
+  width: 87%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.ourStorySection .tomatoImage {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  right: 520px;
+  top: 50px;
+  z-index: -1;
+}
+.ourStorySection .ourStoryTitleContainer {
+  width: 40%;
+}
+.ourStorySection .ourStoryTitleContainer .ourStoryTitle {
+  font-size: 72px;
+}
+.ourStorySection .ourStoryTitleImage {
+  width: 55%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .ourStorySection .tomatoImage {
+    right: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .ourStorySection .tomatoImage {
+    right: 330px;
+    top: 70px;
+  }
+  .ourStorySection .ourStoryTitleContainer .ourStoryTitle {
+    font-size: 52px;
+  }
+  .ourStorySection .ourStoryTitleContainer .ourStoryTitleDescription {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .ourStorySection .tomatoImage {
+    right: 240px;
+    top: 110px;
+  }
+  .ourStorySection .ourStoryTitleContainer .ourStoryTitle {
+    font-size: 42px;
+  }
+  .ourStorySection .ourStoryTitleContainer .ourStoryTitleDescription {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .ourStorySection .tomatoImage {
+    right: 200px;
+    top: 120px;
+  }
+  .ourStorySection .ourStoryTitleContainer .ourStoryTitle {
+    font-size: 32px;
+  }
+  .ourStorySection .ourStoryTitleContainer .ourStoryTitleDescription {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=OurStorySection.css.map */

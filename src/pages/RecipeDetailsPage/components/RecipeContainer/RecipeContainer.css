@@ -1,0 +1,149 @@
+.recipeContainer {
+  width: 87%;
+  height: auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.recipeContainer .singleRecipeImg {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+}
+.recipeContainer .rightSideDetails {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.recipeContainer .rightSideDetails .titleAndMealType .recipeTitle {
+  font-size: 52px;
+}
+.recipeContainer .rightSideDetails .titleAndMealType .recipeDescription {
+  font-size: 24px;
+}
+.recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer {
+  display: flex;
+  gap: 40px;
+}
+.recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesTitle {
+  font-weight: bold;
+}
+.recipeContainer .rightSideDetails .ingredientsAndPreparation {
+  display: flex;
+  gap: 100px;
+}
+.recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeTitle {
+    font-size: 44px;
+  }
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeDescription {
+    font-size: 22px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer {
+    gap: 30px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesTitle {
+    font-size: 14px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesValue {
+    font-size: 14px;
+  }
+  .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .ingredients, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .ingredients {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .recipeContainer .singleRecipeImg {
+    width: 45%;
+  }
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeTitle {
+    font-size: 34px;
+  }
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeDescription {
+    font-size: 18px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer {
+    gap: 20px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesTitle {
+    font-size: 12px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesValue {
+    font-size: 12px;
+  }
+  .recipeContainer .rightSideDetails .ingredientsAndPreparation {
+    gap: 50px;
+  }
+  .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .ingredients, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .ingredients {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .recipeContainer {
+    gap: 35px;
+  }
+  .recipeContainer .singleRecipeImg {
+    width: 45%;
+  }
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeTitle {
+    font-size: 26px;
+  }
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeDescription {
+    font-size: 16px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer {
+    gap: 15px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesTitle {
+    font-size: 10px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesValue {
+    font-size: 10px;
+  }
+  .recipeContainer .rightSideDetails .ingredientsAndPreparation {
+    gap: 35px;
+  }
+  .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .ingredients, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .ingredients {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .recipeContainer .singleRecipeImg {
+    width: 45%;
+  }
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeTitle {
+    font-size: 18px;
+  }
+  .recipeContainer .rightSideDetails .titleAndMealType .recipeDescription {
+    font-size: 12px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer {
+    gap: 10px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesTitle {
+    font-size: 8px;
+  }
+  .recipeContainer .rightSideDetails .cookTimeAndCaloriesContainer .cookTimeAndCaloriesElement .cookTimeAndCaloriesValue {
+    font-size: 8px;
+  }
+  .recipeContainer .rightSideDetails .ingredientsAndPreparation {
+    gap: 25px;
+  }
+  .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .ingredientsContainer .ingredients, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .instructions, .recipeContainer .rightSideDetails .ingredientsAndPreparation .instructionsContainer .ingredients {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=RecipeContainer.css.map */

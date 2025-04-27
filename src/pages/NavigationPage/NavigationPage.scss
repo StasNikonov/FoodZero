@@ -1,0 +1,90 @@
+.navigationPageSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/navigationPage/NavigationPageBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(35, 48, 0, 0.8);
+    z-index: 1;
+  }
+
+  > .navigationPage {
+    position: relative;
+    z-index: 2;
+  }
+
+  .navigationPage{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .navigation{
+      height: 100%;
+
+      .navigationList{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .navigationElement {
+          font-size: 52px;
+          color: #FFFFFF;
+        }
+
+        & .navigationElement:hover {
+          cursor: pointer;
+          transition: 0.3s;
+          color: #9CAA00;
+        }
+      }
+    }
+
+    .contacts{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navigationPageSection{
+    .navigationPage{
+      .navigation{
+        .navigationList {
+          list-style: none;
+
+          li {
+            .navigationElement {
+              font-size: 38px;
+            }
+          }
+        }
+      }
+
+      .contacts{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15px;
+      }
+    }
+  }
+}
+

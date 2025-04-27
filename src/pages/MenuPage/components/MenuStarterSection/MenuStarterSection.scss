@@ -1,0 +1,65 @@
+.menuStarterSection{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../../assets/menuPage/menuStarterSectionBackground.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  .menuStarterSectionTitleContainer{
+    width: 87%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+
+    .menuStarterSectionTitle{
+      font-size: 88px;
+      color: #FFFFFF;
+    }
+
+    .menuStarterSectionDescription{
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .menuStarterSection{
+    .menuStarterSectionTitleContainer{
+      .menuStarterSectionTitle{
+        font-size: 72px;
+      }
+      .menuStarterSectionDescription{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .menuStarterSection{
+    .menuStarterSectionTitleContainer{
+      .menuStarterSectionTitle{
+        font-size: 66px;
+      }
+    }
+  }
+}
+
+@media(max-width: 480px){
+  .menuStarterSection{
+    .menuStarterSectionTitleContainer{
+      .menuStarterSectionTitle{
+        font-size: 58px;
+      }
+      .menuStarterSectionDescription{
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.contactsDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+
+  .contactsTitle {
+    color: #FFFFFF;
+    padding-bottom: 5px;
+    border-bottom: 4px dotted #FFFFFF;
+  }
+
+  .contactsElement {
+    color: #FFFFFF;
+  }
+}
+
+@media(max-width: 768px){
+  .contactsDetail {
+    display: none;
+  }
+}

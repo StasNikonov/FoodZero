@@ -1,0 +1,117 @@
+.reservationFormContainer{
+  width: 100%;
+  background-color: #EBF0E4;
+  display: flex;
+  justify-content: center;
+
+  .reservationForm{
+    margin-top: 170px;
+    margin-bottom: 175px;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    .formTitleContainer{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .formTitle{
+        font-size: 88px;
+        color: #000000;
+      }
+      .formDescription{
+        color: #4D4D4D;
+      }
+    }
+
+    .selectorsContainer{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .reservationSelectors{
+        width: 350px;
+        padding: 15px 25px;
+        border: 2px solid black;
+        appearance: none;
+        background: none;
+        font-family: "Lato", sans-serif;
+      }
+
+      .react-datepicker__input-container input::placeholder{
+        color: #000000;
+      }
+    }
+
+    .submitButton{
+      width: 200px;
+      background: #233000;
+      color: #FFFFFF;
+      border: none;
+      padding: 15px 25px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .reservationFormContainer{
+    .reservationForm{
+      .formTitleContainer{
+        .formTitle{
+          font-size: 64px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .reservationFormContainer{
+    .reservationForm{
+      .formTitleContainer{
+        .formTitle{
+          font-size: 48px;
+        }
+      }
+      .selectorsContainer{
+        .reservationSelectors{
+          width: 170px;
+          padding: 10px 15px;
+        }
+      }
+      .submitButton{
+        padding: 10px 16px;
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .reservationFormContainer{
+    .reservationForm{
+      .formTitleContainer{
+        .formTitle{
+          font-size: 32px;
+        }
+      }
+      .selectorsContainer{
+        .reservationSelectors{
+          padding: 8px 15px;
+          width: 150px;
+          font-size: 12px;
+        }
+      }
+      .submitButton{
+        padding: 10px 16px;
+      }
+    }
+  }
+}

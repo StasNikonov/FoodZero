@@ -1,0 +1,134 @@
+.addressAndLocationSection{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  gap: 100px;
+  position: relative;
+
+  .orangeImg{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    left: 400px;
+    top: -80px;
+  }
+
+  .contactsContainer{
+    width: 100%;
+    display: flex;
+    align-items: end;
+
+    .yellowFruitImg{
+      width: 500px;
+      height: auto;
+    }
+
+    .contactsInformation{
+      display: flex;
+      flex-direction: column;
+      padding: 100px 150px;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .locationContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .location{
+      width: 30%;
+    }
+
+    .locationImg{
+      width: 500px;
+      height: auto;
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .addressAndLocationSection{
+    .contactsContainer{
+      .contactsInformation{
+        padding: 100px 0 100px 150px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .addressAndLocationSection{
+    .orangeImg{
+      width: 150px;
+      left: 300px;
+      top: -20px;
+    }
+    .contactsContainer{
+      .yellowFruitImg{
+        width: 350px;
+      }
+      .contactsInformation{
+        padding: 100px 0 100px 70px;
+      }
+    }
+    .locationContainer{
+      .locationImg{
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .addressAndLocationSection{
+    .orangeImg{
+      width: 120px;
+      left: 220px;
+      top: -60px;
+    }
+    .contactsContainer{
+      .yellowFruitImg{
+        width: 250px;
+      }
+      .contactsInformation{
+        padding: 0 0 0 50px;
+      }
+    }
+    .locationContainer{
+      .locationImg{
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .addressAndLocationSection{
+    .orangeImg{
+      width: 90px;
+      left: 175px;
+      top: -50px;
+    }
+    .contactsContainer{
+      .yellowFruitImg{
+        width: 200px;
+      }
+      .contactsInformation{
+        padding: 0 0 0 30px;
+      }
+    }
+    .locationContainer{
+      .locationImg{
+        width: 200px;
+      }
+    }
+  }
+}

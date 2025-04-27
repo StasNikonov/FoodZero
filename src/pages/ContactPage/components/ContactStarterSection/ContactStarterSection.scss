@@ -1,0 +1,122 @@
+.contactStarterSection{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../../assets/contactPage/contactStarterSectionBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .contactStarter{
+    height: 100%;
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contactStarterSectionTitleContainer{
+      width: 55%;
+
+      .contactStarterSectionTitle{
+        color: #FFFFFF;
+        font-size: 88px;
+      }
+
+      .contactStarterSectionDescription{
+        color: #FFFFFF;
+      }
+    }
+
+    .openTimeSection{
+      width: 45%;
+      height: 100%;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      .openTime{
+        display: flex;
+        justify-content: space-between;
+        color: #FFFFFF;
+        border-bottom: 2px dotted #FFFFFF;
+        padding-bottom: 25px;
+      }
+
+      .maleTypeForTimeList{
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .contactStarterSection{
+    .contactStarter{
+      .contactStarterSectionTitleContainer{
+        width: 50%;
+        .contactStarterSectionTitle{
+          font-size: 64px;
+        }
+        .contactStarterSectionDescription{
+          font-size: 12px;
+        }
+      }
+      .openTimeSection{
+        width: 50%;
+        .openTime{
+          .openTimeTitle{
+            font-size: 28px;
+          }
+          .openTimeDescr{
+            font-size: 12px;
+          }
+        }
+        .maleTypeForTimeList{
+          .timeContainer{
+            .time{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .contactStarterSection{
+    .contactStarter{
+      .contactStarterSectionTitleContainer{
+        .contactStarterSectionTitle{
+          font-size: 52px;
+        }
+        .contactStarterSectionDescription{
+          font-size: 10px;
+        }
+      }
+      .openTimeSection{
+        .openTime{
+          .openTimeTitle{
+            font-size: 20px;
+          }
+          .openTimeDescr{
+            font-size: 10px;
+          }
+        }
+        .maleTypeForTimeList{
+          .timeContainer{
+            .time{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

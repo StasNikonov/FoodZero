@@ -1,0 +1,196 @@
+.welcomeSectionContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .welcomeSection{
+    width: 87%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .sectionTitle{
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 15px;
+
+      .title{
+        font-size: 100px;
+      }
+
+      .scroll{
+        transform: rotate(90deg);
+        transform-origin: left;
+        font-size: 48px;
+      }
+    }
+
+    .images{
+      margin-top: 94px;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+      position: relative;
+
+      .welcomeSectionImage{
+        max-width: 750px;
+        height: auto;
+      }
+
+      .spicesList{
+        position: absolute;
+        display: flex;
+        bottom: -30px;
+        margin-right: 330px;
+        gap: 25px;
+        z-index: 2;
+
+        .spicesListElement{
+          max-width: 220px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px){
+  .welcomeSectionContainer{
+    .welcomeSection{
+      .images{
+        .spicesList{
+          margin-right: 250px;
+          .spicesListElement{
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  .welcomeSectionContainer{
+    .welcomeSection{
+      .sectionTitle{
+        .scroll{
+          font-size: 28px;
+        }
+      }
+      .images{
+        .welcomeSectionImage{
+          max-width: 500px;
+        }
+
+        .spicesList{
+          margin-right: 250px;
+          .spicesListElement{
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .welcomeSectionContainer{
+    .welcomeSection{
+      .sectionTitle{
+        .title{
+          font-size: 66px;
+        }
+        .description{
+          font-size: 14px;
+        }
+      }
+
+      .images{
+        .welcomeSectionImage{
+          max-width: 500px;
+        }
+
+        .spicesList{
+          margin-right: 200px;
+          .spicesListElement{
+            max-width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .welcomeSectionContainer{
+    .welcomeSection{
+      .sectionTitle{
+        .title{
+          font-size: 62px;
+        }
+        .description{
+          font-size: 12px;
+        }
+        .scroll{
+          font-size: 20px;
+        }
+      }
+
+      .images{
+        .welcomeSectionImage{
+          max-width: 350px;
+        }
+
+        .spicesList{
+          margin-right: 70px;
+          .spicesListElement{
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 480px){
+  .welcomeSectionContainer{
+    .welcomeSection{
+      .sectionTitle{
+        .title{
+          font-size: 50px;
+        }
+        .description{
+          font-size: 12px;
+        }
+        .scroll{
+          font-size: 20px;
+        }
+      }
+
+      .images{
+        .welcomeSectionImage{
+          max-width: 250px;
+        }
+
+        .spicesList{
+          margin-right: 90px;
+          .spicesListElement{
+            max-width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+

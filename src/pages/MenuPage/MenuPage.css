@@ -1,0 +1,11 @@
+.menuPage {
+  width: 100%;
+}
+.menuPage .menuList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=MenuPage.css.map */

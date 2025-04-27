@@ -1,0 +1,103 @@
+.addressAndLocationSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  gap: 100px;
+  position: relative;
+}
+.addressAndLocationSection .orangeImg {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  left: 400px;
+  top: -80px;
+}
+.addressAndLocationSection .contactsContainer {
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+.addressAndLocationSection .contactsContainer .yellowFruitImg {
+  width: 500px;
+  height: auto;
+}
+.addressAndLocationSection .contactsContainer .contactsInformation {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 150px;
+}
+.addressAndLocationSection .contactsContainer .contactsInformation p {
+  text-align: left;
+}
+.addressAndLocationSection .locationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addressAndLocationSection .locationContainer .location {
+  width: 30%;
+}
+.addressAndLocationSection .locationContainer .locationImg {
+  width: 500px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .addressAndLocationSection .contactsContainer .contactsInformation {
+    padding: 100px 0 100px 150px;
+  }
+}
+@media (max-width: 768px) {
+  .addressAndLocationSection .orangeImg {
+    width: 150px;
+    left: 300px;
+    top: -20px;
+  }
+  .addressAndLocationSection .contactsContainer .yellowFruitImg {
+    width: 350px;
+  }
+  .addressAndLocationSection .contactsContainer .contactsInformation {
+    padding: 100px 0 100px 70px;
+  }
+  .addressAndLocationSection .locationContainer .locationImg {
+    width: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .addressAndLocationSection .orangeImg {
+    width: 120px;
+    left: 220px;
+    top: -60px;
+  }
+  .addressAndLocationSection .contactsContainer .yellowFruitImg {
+    width: 250px;
+  }
+  .addressAndLocationSection .contactsContainer .contactsInformation {
+    padding: 0 0 0 50px;
+  }
+  .addressAndLocationSection .locationContainer .locationImg {
+    width: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .addressAndLocationSection .orangeImg {
+    width: 90px;
+    left: 175px;
+    top: -50px;
+  }
+  .addressAndLocationSection .contactsContainer .yellowFruitImg {
+    width: 200px;
+  }
+  .addressAndLocationSection .contactsContainer .contactsInformation {
+    padding: 0 0 0 30px;
+  }
+  .addressAndLocationSection .locationContainer .locationImg {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=AddressAndLocationSection.css.map */

@@ -1,0 +1,105 @@
+.menuElement{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .priceContainer{
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: end;
+    border-bottom: 3px dotted #000000;
+
+    .price{
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+  }
+
+  .descriptionContainer{
+    width: 100%;
+
+    .mealName{
+      font-size: 36px;
+      color: #000000;
+    }
+    .mealCuisine{
+      font-size: 24px;
+      color: #4D4D4D;
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  .menuElement{
+    .descriptionContainer{
+      .mealName{
+        font-size: 24px;
+      }
+      .mealCuisine{
+        font-size: 16px;
+      }
+    }
+    .priceContainer{
+      .price{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .menuElement{
+    .descriptionContainer{
+      .mealName{
+        font-size: 20px;
+      }
+      .mealCuisine{
+        font-size: 14px;
+      }
+    }
+    .priceContainer{
+      .price{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .menuElement{
+    .descriptionContainer{
+      .mealName{
+        font-size: 18px;
+      }
+      .mealCuisine{
+        font-size: 14px;
+      }
+    }
+    .priceContainer{
+      .price{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media(max-width: 480px){
+  .menuElement{
+    .descriptionContainer{
+      .mealName{
+        font-size: 16px;
+      }
+      .mealCuisine{
+        font-size: 12px;
+      }
+    }
+    .priceContainer{
+      .price{
+        font-size: 16px;
+      }
+    }
+  }
+}

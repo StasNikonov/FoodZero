@@ -1,0 +1,64 @@
+.posts{
+  width:87%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  .tagsList{
+    margin-top: 70px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tagButton{
+      background: none;
+      border: none;
+      font-size: 20px;
+      padding-bottom: 10px;
+
+      &.isClicked{
+        border-bottom: 2px dotted #000000;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .posts{
+    .tagsList{
+      width: 65%;
+      gap: 15px;
+      .tagButton{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .posts{
+    .tagsList{
+      width: 65%;
+      gap: 15px;
+      .tagButton{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media(max-width: 480px){
+  .posts{
+    .tagsList{
+      width: 80%;
+      gap: 15px;
+      .tagButton{
+        font-size: 12px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,104 @@
+.staffContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  &.reversed{
+    margin-top: -200px;
+    gap: 120px;
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: end;
+    bottom: 10px;
+
+    .employeeDescription{
+      text-align: end;
+    }
+  }
+
+  .employeeDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .employeeTitle{
+      font-size: 52px;
+    }
+
+    .employeeName{
+      font-size: 20px;
+    }
+
+    .employeeImg{
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  .employeeDescription{
+    margin-top: 120px;
+    width: 35%;
+    font-size: 16px;
+    color: #4D4D4D;
+  }
+}
+
+@media(max-width: 768px) {
+  .staffContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .employeeDescription {
+      width: 90%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .employeeDetail {
+      .employeeImg {
+        width: 100%;
+      }
+    }
+  }
+
+  .staffContainer.reversed {
+    margin-top: 0;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: auto;
+
+    .employeeDescription {
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .staffContainer{
+    .employeeDetail{
+      .employeeTitle{
+        font-size: 46px;
+      }
+    }
+    .employeeDescription{
+      font-size: 14px;
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .staffContainer{
+    .employeeDetail{
+      .employeeTitle{
+        font-size: 36px;
+      }
+    }
+    .employeeDescription{
+      font-size: 12px;
+    }
+  }
+}

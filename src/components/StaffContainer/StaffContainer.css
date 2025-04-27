@@ -1,0 +1,83 @@
+.staffContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.staffContainer.reversed {
+  margin-top: -200px;
+  gap: 120px;
+  flex-direction: row-reverse;
+  align-items: end;
+  justify-content: end;
+  bottom: 10px;
+}
+.staffContainer.reversed .employeeDescription {
+  text-align: end;
+}
+.staffContainer .employeeDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.staffContainer .employeeDetail .employeeTitle {
+  font-size: 52px;
+}
+.staffContainer .employeeDetail .employeeName {
+  font-size: 20px;
+}
+.staffContainer .employeeDetail .employeeImg {
+  width: 80%;
+  height: auto;
+}
+.staffContainer .employeeDescription {
+  margin-top: 120px;
+  width: 35%;
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+@media (max-width: 768px) {
+  .staffContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .staffContainer .employeeDescription {
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .staffContainer .employeeDetail .employeeImg {
+    width: 100%;
+  }
+  .staffContainer.reversed {
+    margin-top: 0;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: auto;
+  }
+  .staffContainer.reversed .employeeDescription {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .staffContainer .employeeDetail .employeeTitle {
+    font-size: 46px;
+  }
+  .staffContainer .employeeDescription {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .staffContainer .employeeDetail .employeeTitle {
+    font-size: 36px;
+  }
+  .staffContainer .employeeDescription {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=StaffContainer.css.map */

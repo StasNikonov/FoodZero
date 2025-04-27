@@ -1,0 +1,41 @@
+.ourMenuSection{
+  width: 100%;
+  margin-top: 150px;
+  padding-bottom: 100px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .ourMenuBackgroundImg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: auto;
+  }
+
+  .ourMenuSectionTitle{
+    width: 90%;
+    margin-top: 100px;
+
+    .sectionTitle{
+      font-size: 50px;
+      color: #000000
+    }
+    .titleDescription{
+      color: #000000
+    }
+  }
+  .OurMenuList{
+    width: 90%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+}
+

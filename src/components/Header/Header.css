@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header .leftSide {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  color: #FFFFFF;
+}
+.header .leftSide .reservationButton {
+  padding: 15px 40px;
+  background: none;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .header .leftSide .telephone {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    justify-content: center;
+  }
+  .header .leftSide {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

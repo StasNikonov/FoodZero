@@ -1,0 +1,15 @@
+.staffSection {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .staffSection {
+    gap: 25px;
+  }
+}
+
+/*# sourceMappingURL=StaffSection.css.map */

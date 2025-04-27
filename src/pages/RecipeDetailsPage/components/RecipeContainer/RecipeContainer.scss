@@ -1,0 +1,201 @@
+.recipeContainer{
+  width: 87%;
+  height: auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  .singleRecipeImg{
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .rightSideDetails{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .titleAndMealType{
+      .recipeTitle{
+        font-size: 52px;
+      }
+
+      .recipeDescription{
+        font-size: 24px;
+      }
+    }
+
+    .cookTimeAndCaloriesContainer{
+      display: flex;
+      gap: 40px;
+
+      .cookTimeAndCaloriesElement{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .cookTimeAndCaloriesTitle{
+          font-weight: bold;
+        }
+      }
+    }
+
+    .ingredientsAndPreparation{
+      display: flex;
+      gap: 100px;
+
+      .ingredientsContainer, .instructionsContainer{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .recipeContainer{
+    .rightSideDetails{
+      .titleAndMealType{
+        .recipeTitle{
+          font-size: 44px;
+        }
+        .recipeDescription{
+          font-size: 22px;
+        }
+      }
+      .cookTimeAndCaloriesContainer{
+        gap: 30px;
+        .cookTimeAndCaloriesElement{
+          .cookTimeAndCaloriesTitle{
+            font-size: 14px;
+          }
+          .cookTimeAndCaloriesValue{
+            font-size: 14px;
+          }
+        }
+      }
+      .ingredientsAndPreparation{
+        .ingredientsContainer, .instructionsContainer{
+          .instructions, .ingredients{
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .recipeContainer{
+    .singleRecipeImg{
+      width: 45%;
+    }
+    .rightSideDetails{
+      .titleAndMealType{
+        .recipeTitle{
+          font-size: 34px;
+        }
+        .recipeDescription{
+          font-size: 18px;
+        }
+      }
+      .cookTimeAndCaloriesContainer{
+        gap: 20px;
+        .cookTimeAndCaloriesElement{
+          .cookTimeAndCaloriesTitle{
+            font-size: 12px;
+          }
+          .cookTimeAndCaloriesValue{
+            font-size: 12px;
+          }
+        }
+      }
+      .ingredientsAndPreparation{
+        gap: 50px;
+        .ingredientsContainer, .instructionsContainer{
+          .instructions, .ingredients{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .recipeContainer{
+    gap: 35px;
+    .singleRecipeImg{
+      width: 45%;
+    }
+    .rightSideDetails{
+      .titleAndMealType{
+        .recipeTitle{
+          font-size: 26px;
+        }
+        .recipeDescription{
+          font-size: 16px;
+        }
+      }
+      .cookTimeAndCaloriesContainer{
+        gap: 15px;
+        .cookTimeAndCaloriesElement{
+          .cookTimeAndCaloriesTitle{
+            font-size: 10px;
+          }
+          .cookTimeAndCaloriesValue{
+            font-size: 10px;
+          }
+        }
+      }
+      .ingredientsAndPreparation{
+        gap: 35px;
+        .ingredientsContainer, .instructionsContainer{
+          .instructions, .ingredients{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .recipeContainer{
+    .singleRecipeImg{
+      width: 45%;
+    }
+    .rightSideDetails{
+      .titleAndMealType{
+        .recipeTitle{
+          font-size: 18px;
+        }
+        .recipeDescription{
+          font-size: 12px;
+        }
+      }
+      .cookTimeAndCaloriesContainer{
+        gap: 10px;
+        .cookTimeAndCaloriesElement{
+          .cookTimeAndCaloriesTitle{
+            font-size: 8px;
+          }
+          .cookTimeAndCaloriesValue{
+            font-size: 8px;
+          }
+        }
+      }
+      .ingredientsAndPreparation{
+        gap: 25px;
+        .ingredientsContainer, .instructionsContainer{
+          .instructions, .ingredients{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.contactStarterSection {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../../assets/contactPage/contactStarterSectionBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactStarterSection .contactStarter {
+  height: 100%;
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactStarterSection .contactStarter .contactStarterSectionTitleContainer {
+  width: 55%;
+}
+.contactStarterSection .contactStarter .contactStarterSectionTitleContainer .contactStarterSectionTitle {
+  color: #FFFFFF;
+  font-size: 88px;
+}
+.contactStarterSection .contactStarter .contactStarterSectionTitleContainer .contactStarterSectionDescription {
+  color: #FFFFFF;
+}
+.contactStarterSection .contactStarter .openTimeSection {
+  width: 45%;
+  height: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.contactStarterSection .contactStarter .openTimeSection .openTime {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  border-bottom: 2px dotted #FFFFFF;
+  padding-bottom: 25px;
+}
+.contactStarterSection .contactStarter .openTimeSection .maleTypeForTimeList {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .contactStarterSection .contactStarter .contactStarterSectionTitleContainer {
+    width: 50%;
+  }
+  .contactStarterSection .contactStarter .contactStarterSectionTitleContainer .contactStarterSectionTitle {
+    font-size: 64px;
+  }
+  .contactStarterSection .contactStarter .contactStarterSectionTitleContainer .contactStarterSectionDescription {
+    font-size: 12px;
+  }
+  .contactStarterSection .contactStarter .openTimeSection {
+    width: 50%;
+  }
+  .contactStarterSection .contactStarter .openTimeSection .openTime .openTimeTitle {
+    font-size: 28px;
+  }
+  .contactStarterSection .contactStarter .openTimeSection .openTime .openTimeDescr {
+    font-size: 12px;
+  }
+  .contactStarterSection .contactStarter .openTimeSection .maleTypeForTimeList .timeContainer .time {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .contactStarterSection .contactStarter .contactStarterSectionTitleContainer .contactStarterSectionTitle {
+    font-size: 52px;
+  }
+  .contactStarterSection .contactStarter .contactStarterSectionTitleContainer .contactStarterSectionDescription {
+    font-size: 10px;
+  }
+  .contactStarterSection .contactStarter .openTimeSection .openTime .openTimeTitle {
+    font-size: 20px;
+  }
+  .contactStarterSection .contactStarter .openTimeSection .openTime .openTimeDescr {
+    font-size: 10px;
+  }
+  .contactStarterSection .contactStarter .openTimeSection .maleTypeForTimeList .timeContainer .time {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=ContactStarterSection.css.map */

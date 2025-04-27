@@ -1,0 +1,15 @@
+.featuresSectionContainer{
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+
+  .featuresSection{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
