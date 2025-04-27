@@ -11,7 +11,7 @@ import { RecipeDetailsPage } from './pages/RecipeDetailsPage/RecipeDetailsPage.t
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/FoodZero">
                 <Routes>
                     <Route path="/" element={<NavigationPage />} />
                     <Route path="/menu" element={<MenuPage />} />
